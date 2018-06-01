@@ -1,6 +1,12 @@
+doctype html
 html
   head
-    title!=title
+    meta(charset = 'utf-8')
   body
-    h1!=message
-    
+    form(action='/topic' method='post')
+      p
+        input(type='text' name='title' placeholder='ID')
+      p
+        textarea(name='description' placeholder='password')
+      p
+        input(type='submit')
